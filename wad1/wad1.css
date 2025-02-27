@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+    color: #3c3b3b;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar Styles */
+.side-menu {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    background: #0d1b30;
+    color: #ecf0f1;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.side-menu .brand-name h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu ul li {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.side-menu ul li:hover {
+    background-color: #224769;
+}
+
+.side-menu ul li i {
+    margin-right: 15px;
+}
+
+/* Navbar Styles */
+.header {
+    width: 80%;
+    margin-left: 20%;
+    height: 60px;
+    background: #0a5485;
+    color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .nav .college-name h1 {
+    font-size: 18px;
+}
+
+.header .nav .user a {
+    background: linear-gradient(45deg, #e74c3c, #e67e22); /* Gradient button */
+    color: #ecf0f1;
+    padding: 10px 20px; /* Better padding */
+    font-size: 14px;
+    font-weight: bold; /* Makes it stand out */
+    text-decoration: none;
+    border-radius: 25px; /* Pill-shaped button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.header .nav .user a:hover {
+    background: linear-gradient(45deg, #d35400, #c0392b); /* Darker on hover */
+    transform: scale(1.1); /* Slight enlargement for interactivity */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.header .nav .user i {
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Cards Section */
+.content {
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #a0d2cc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .box h1 {
+    color: #3498db;
+    font-size: 24px;
+}
+
+.card .icon-case i {
+    font-size: 36px;
+    color: #7f8c8d;
+}
+
+/* Activities Section */
+.activity {
+    background: #ebf2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.activity .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 15px;
+}
+
+.activity .title a {
+    background: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.activity .title a:hover {
+    background: #2980b9;
+}
+
+.activity table {
+    width: 100%;
+    border-collapse: collapse;
+   background-color: #a0d2cc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity table th, .activity table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.activity table th {
+    background: #54bccc;
+    font-weight: 600;
+}
+
+.activity table tr:hover {
+    background: #93ebe7;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .side-menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .header {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
