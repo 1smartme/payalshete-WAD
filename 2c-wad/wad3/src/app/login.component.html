@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>User Login</h1>
+  
+    <div class="form-box">
+      <input type="email" #email placeholder="Enter your email" name="Email"><br>
+      <input type="password" #password placeholder="Enter your password" name="Password"><br>
+  
+      <button (click)="loginUser(email.value, password.value)">Login</button>
+    </div>
+  
+    <h2 *ngIf="loggedIn">Welcome Back!</h2>
+    <div class="output-box" *ngIf="loggedIn">
+      <p><strong>Email:</strong> {{ displayemail }}</p>
+      <p><strong>Password:</strong> {{ displaypassword }}</p>
+    </div>
+  </div>
+  

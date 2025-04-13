@@ -1,0 +1,12 @@
+#wrapper {
+    min-height: 100vh;
+  }
+  
+  #sidebar {
+    min-width: 220px;
+  }
+  
+  #page-content {
+    flex: 1;
+  }
+  
