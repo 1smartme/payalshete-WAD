@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>EduMobile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+    <div data-role="header">
+      <h1>Education Mobile Website</h1>
+    </div>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+        <li><a href="#courses" data-icon="grid">Courses</a></li>
+        <li><a href="#about" data-icon="info">About</a></li>
+        <li><a href="#contact" data-icon="mail">Contact</a></li>
+      </ul>
+    </div>
+
+    <div data-role="content">
+      <p>Welcome to EduMobile – Learn Anywhere, Anytime!</p>
+      <img src="https://via.placeholder.com/300x150" alt="Learning Banner" style="width:100%; height:auto;">
+      <a href="#courses" data-role="button" data-icon="arrow-r">View Courses</a>
+    </div>
+
+    <div data-role="footer">
+      <h4>&copy; 2025 EduMobile. All Rights Reserved.</h4>
+    </div>
+</div>
+
+<!-- Courses Page -->
+<div data-role="page" id="courses">
+    <div data-role="header" data-add-back-btn="true">
+      <h1>Courses</h1>
+    </div>
+
+    <div data-role="content">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home" data-transition="fade">Home</a></li>
+          <li><a href="#courses" data-icon="grid" data-transition="fade">Courses</a></li>
+          <li><a href="#about" data-icon="info" data-transition="fade">About</a></li>
+          <li><a href="#contact" data-icon="mail" data-transition="fade">Contact</a></li>
+        </ul>
+      </div>
+
+      <img src="https://via.placeholder.com/300x150" alt="Courses Banner" style="width:100%; height:auto;">
+      
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Data Science</a></li>
+        <li><a href="#">AI & Machine Learning</a></li>
+        <li><a href="#">Mobile App Development</a></li>
+      </ul>
+    </div>
+
+    <div data-role="footer">
+      <h4>&copy; 2025 EduMobile. All Rights Reserved.</h4>
+    </div>
+</div>
+
+<!-- About Page -->
+<div data-role="page" id="about">
+    <div data-role="header" data-add-back-btn="true">
+      <h1>About</h1>
+    </div>
+
+    <div data-role="content">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home" data-transition="fade">Home</a></li>
+          <li><a href="#courses" data-icon="grid" data-transition="fade">Courses</a></li>
+          <li><a href="#about" data-icon="info" data-transition="fade">About</a></li>
+          <li><a href="#contact" data-icon="mail" data-transition="fade">Contact</a></li>
+        </ul>
+      </div>
+
+      <p>EduMobile is a platform to learn latest technologies through mobile.</p>
+      <img src="https://via.placeholder.com/300x150" alt="About Us" style="width:100%; height:auto;">
+    </div>
+
+    <div data-role="footer">
+      <h4>&copy; 2025 EduMobile. All Rights Reserved.</h4>
+    </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+    <div data-role="header" data-add-back-btn="true">
+      <h1>Contact</h1>
+    </div>
+
+    <div data-role="content">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home" data-transition="fade">Home</a></li>
+          <li><a href="#courses" data-icon="grid" data-transition="fade">Courses</a></li>
+          <li><a href="#about" data-icon="info" data-transition="fade">About</a></li>
+          <li><a href="#contact" data-icon="mail" data-transition="fade">Contact</a></li>
+        </ul>
+      </div>
+
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <label for="message">Message:</label>
+        <textarea id="message"></textarea>
+
+        <button type="submit" data-role="button" data-icon="check">Send</button>
+      </form>
+      <img src="https://via.placeholder.com/300x150" alt="Contact Us" style="width:100%; height:auto;">
+    </div>
+
+    <div data-role="footer">
+      <h4>&copy; 2025 EduMobile. All Rights Reserved.</h4>
+    </div>
+</div>
+
+</body>
+</html>
